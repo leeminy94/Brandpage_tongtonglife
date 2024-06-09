@@ -1,0 +1,733 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="통통생활">
+	<meta name="copyright" content="(주)토마토페이">
+	<meta name="title" content="통통생활::Make Tomorrow Together for better Life 더 나은 일상을 위해, 함께 내일을 만듭니다.">
+	<meta name="keywords" content="통통몰,통통생활,주방세제,세탁세제,섬유유연제,일회용수세미,TTC,통통코인,생활용품,쇼핑몰">
+	<meta name="description" content="통통생활::Make Tomorrow Together for better Life 더 나은 일상을 위해, 함께 내일을 만듭니다.">
+	<meta name="Robots" content="index, follow">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="./images/logo.png">
+	<meta property="og:site_name" content="">
+	<meta property="og:url" content="http://">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<title>통통생활</title>
+
+	<!--fontawesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link href="https://webfontworld.github.io/mapo/MapoFlowerIsland.css" rel="stylesheet">
+
+	<!-- Fav Icon -->
+	<link rel="icon" type="image/jpg" href="./images/favicon.png" sizes="48x48">
+	<link rel="shortcut icon" href="./images/favicon.ico">
+
+	<!-- Main Style -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<link rel="stylesheet" type="text/css" href="./css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/ttl_brandpg.css">
+	<!-- 	<link rel="stylesheet" type="text/css" href="./css/side_menu.css"> -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+
+	<!--[if lt IE 9]>
+<script type="text/javascript" src="./js/html5shiv.js"></script>
+<script type="text/javascript" src="./js/respond.min.js"></script>
+<![endif]-->
+	<script type="text/javascript" src="./js/html5shiv.js"></script>
+	<script type="text/javascript" src="./js/respond.min.js"></script>
+
+	<!-- Basic JavaScript -->
+	<script type="text/javascript" src="./js/script.js"></script>
+	<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="./js/side_menu.js"></script>
+
+	<!-- Tab JavaScript -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			//Default Action - TAB01
+			$(".tab_content").hide(); //Hide all content
+			$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+			$(".tab_content:first").show(); //Show first tab content
+			//On Click Event
+			$("ul.tabs li").click(function () {
+				$("ul.tabs li").removeClass("active"); //Remove any "active" class
+				$(this).addClass("active"); //Add "active" class to selected tab
+				$(".tab_content").hide(); //Hide all tab content
+				var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+				$(activeTab).fadeIn(); //Fade in the active content
+				return false;
+			});
+		});
+	</script>
+
+
+
+	<!-- Bootstrap Core JavaScript -->
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+	<!-- Scrolling Nav JavaScript -->
+	<script type="text/javascript" src="./js/scrolling-nav.js"></script>
+	<script type="text/javascript" src="./js/jquery.easing.1.3.min.js"></script>
+
+	<!-- FlexSlider -->
+	<script defer src="./js/jquery.flexslider.js"></script>
+
+	<script>
+		function myFunction(x) {
+			x.classList.toggle("change");
+		}
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			$(document).click(function () {
+				// if($(".navbar-collapse").hasClass("in")){
+				$('.navbar-collapse').collapse('hide');
+				// }
+			});
+		});
+	</script>
+
+</head>
+
+<!--### 전체 레이아웃 시작 : WRAP ###-->
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+
+	<div id="start" class="wrap">
+		<a class="close-navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" href="#"></a>
+		<!--## 네비 : NAV ##-->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+
+
+				<!-- 모바일 네비 -->
+					<div class="navbar-header page-scroll only_mobile">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<img src="./images/m_menu.png" alt="menu" class="menubtn_img">
+						</button>
+					<a class="navbar-brand page-scroll logo" href="./index.htm">
+						<img src="./images/h_logo.png" alt="통통생활" class="m_tlo only_mobile">
+					</a>
+				</div>
+				<!-- 모바일 네비 끝 -->
+
+				<!-- PC 네비 -->
+				<div class="navbar-header page-scroll only_pc"></div>
+				<div class="collapse navbar-collapse navbar-ex1-collapse" id="navbarSupportedContent">
+					<a class="navbar-brand page-scroll logo" href="./index.htm">
+						<img src="./images/h_logo.png" alt="통통생활" class="tlo only_pc">
+					</a>
+					<ul class="nav navbar-nav">
+						<li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+						<li><a class="page-scroll" href="#about"><span>About</span></a></li>
+						<li><a class="page-scroll" href="#best">Product</a></li>
+						<li><a class="page-scroll" href="#shop">Shop</a></li>
+						<li><a class="page-scroll" href="#contact">Contact</a></li>
+						<!-- <li><a class="page-scroll" href="#news">News</a></li> -->
+					</ul>
+				</div>
+				<div class="nav_bg"></div>
+				<div class="clear"></div>
+			</div>
+		</nav>
+
+		<!--## 네비 : NAV ##-->
+
+		<!--## 콘텐츠 시작 : CONTAINER ##-->
+		<!-- 01 HEAD -->
+		<div id="mainbn">
+			<div class="slider">
+				<div class="swiper-container_mb">
+					<ul class="swiper-wrapper">
+						<li class="v3 swiper-slide"></li>
+						<li class="v2 swiper-slide"></li>
+						<li class="v1 swiper-slide"></li>
+						<li class="v4 swiper-slide"></li>
+					</ul>
+				</div>
+				<div class="swiper-scrollbar"></div>
+			</div>
+		</div>
+		<div class="clear"></div>
+
+		<!-- About-->
+		<div id="about" class="bg_s0 stop-dragging">
+			<div class="acontainer">
+				<div class="ser_wrap">
+					<div class="scontainer">
+						<h2>About
+							<span>TongTong Life</span>
+						</h2>
+					</div>
+
+					<div class="only_pc">
+						<div class="about_con" id="abcon1">
+							<p class="about_left">
+								<span class="about_ttlis">통통생활은</span><br>
+								<span class="about_ttp">좋은 상품이 가격도 착할 수는 없을까?</span><br>
+								라는 생각에서 시작했습니다.
+							</p>
+							<div class="about_right about_img"><div><span>Mild</span></div></div>
+						</div>
+						<div class="about_con" id="abcon2">
+							<p class="about_right">
+								생활에 꼭 필요한 제품을<br>
+								최고의 품질로 제공하기 위해<br>
+								끊임 없이 연구하고 있습니다.
+							</p>
+							<div class="about_left_img about_img"><div><span>Eco</span></div></div>
+						</div>
+						<div class="about_con" id="abcon3">
+							<p class="about_left">
+									온 가족이 사용할 수 있도록<br>
+									엄격한 테스트를 거친<br>
+									통통생활의 제품을 만나보세요.
+							</p>
+							<div class="about_right about_img"><div><span>Safety</span></div></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+
+					<div class="only_mobile">
+						<p class="m_about_txt">
+							<span class="about_ttlis">통통생활은</span><br>
+							<span class="about_ttp">좋은 상품이 가격도 착할 수는 없을까?</span><br>
+							라는 생각에서 시작했습니다.<br><br>
+
+							생활에 꼭 필요한 제품을<br>
+							최고의 품질로 제공하기 위해<br>
+							끊임 없이 연구하고 있습니다.<br><br>
+
+							온 가족이 사용할 수 있도록<br>
+							엄격한 테스트를 거친<br>
+							통통생활의 제품을 만나보세요.
+						</p>
+						<div class="m_ablist">
+							<div id="m_abcon1" class="m_about_con"><div class="m_about_left m_about_img"><div><span>Mild</span></div></div></div>
+							<div id="m_abcon2" class="m_about_con"><div class="m_about_right m_about_img"><div><span>Eco</span></div></div></div>
+							<div id="m_abcon3" class="m_about_con"><div class="m_about_left m_about_img"><div><span>Safety</span></div></div></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+
+
+		<!-- Best-->
+		<div id="best" class="bg_s1 stop-dragging">
+			<div class="scontainer">
+				<div class="ser_wrap">
+					<h2>Product
+						<span>Best Production</span>
+					</h2>
+
+
+					<div class="slider">
+						<div class="swiper-container_b only_pc">
+							<div class="swiper-wrapper">
+								<!--240425 추가-->
+								<div class="swiper-slide">
+									<div class="item_left item4"><img src="./images/item09.png" alt="통통스킨로션"></div>
+									<div class="item_right">
+										<h3>통통생활 통통스킨로션<span>300ml</span></h3>
+										<p class="item_txt">최대 48시간 지속되는 고보습 수분감으로<br>
+											시카성분과 비타민이 첨가되어 <br> 피부장벽 개선 및 자극 진정효과를 갖춘<br>
+											얼굴부터 바디까지 올인원 스킨케어 통통스킨로션입니다.
+											</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_left item4"><img src="./images/item10.png" alt="통통선스틱"></div>
+									<div class="item_right">
+										<h3>통통생활 통통선스틱<span>20g</span></h3>
+										<p class="item_txt">시카성분과 비타민 첨가로<br>피부를 진정시키고,
+											피부 자생력 케어가 가능하며<br>
+											SPF50+/PA++++로 자외선으로부터 피부를 보호하고<br>
+											사계절 데일리로 사용 가능한 통통선스틱입니다.</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_left item4"><img src="./images/item11.png" alt="통통치약"></div>
+									<div class="item_right">
+										<h3>통통생활 통통치약<span>300g</span></h3>
+										<p class="item_txt">고추냉이 성분과 쿨링향, 박하유와 비타민 첨가<br>
+											극강의 시원한 마무리감, 강력한 안티프라그<br>
+											확실한 잇몸질환 예방까지 가능한 통통치약입니다.
+										</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_left item4"><img src="./images/item06.png" alt="통통생활 통통비타올인원"></div>
+									<div class="item_right">
+										<h3>통통생활 통통비타올인원<span>1L</span></h3>
+										<p class="item_txt">샴푸+린스+바디워시를 하나로 올인원샴푸입니다. <br>
+											머리부터 발끝까지 하나로 샤워시간이 단축되며 <br> 피부보호 및 아토피 등 가려움 완화되고 <br> 피부 및 모근에 단백질 공급까지 가능합니다.
+										</p>
+									</div>
+								</div>
+								<!--240425 추가-->
+								<div class="swiper-slide">
+									<div class="item_left item4"><img src="./images/item05.png" alt="통통생활 통통쌀"></div>
+									<div class="item_right">
+										<h3>통통생활 통통쌀<span>1kg</span></h3>
+										<p class="item_txt">23년 햅쌀 강화교동 해풍맞은 고시히카리쌀입니다.<br>
+											소량포장으로 필요할 때만 조금씩 사용 가능하고<br>
+											진공포장으로 청결과 신선도 유지에 탁월하며<br>
+											무공해 청정지역의 깨끗한 환경에서 자라 맛까지 좋은 상품입니다.</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_left item4 item_kimchi"><img src="./images/item07.png" alt="통통백두산김치"></div>
+									<div class="item_right">
+										<h3>통통백두산김치<span>5kg</span></h3>
+										<p class="item_txt">백두산 자연 그대로의 신선한 고랭지 배추와 텁텁함이 없는<br>
+											담백한 씨없는 고춧가루, 특유의 비린내가 없는<br>
+											시원하고 깔끔한 감칠맛의 3년 숙성 새우젓을 사용하여<br>
+											그대로 담은 통통백두산김치입니다.</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_left item4 item_honey"><img src="./images/item08.png" alt="통통꿀"></div>
+									<div class="item_right">
+										<h3>통통꿀<span>500g</span></h3>
+										<p class="item_txt">소량만 생산하여 한정판매하는 <br>
+											해충방제 농약과 항생제를 전혀 쓰지 않은<br> 천연 통통꿀입니다.</p>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+										<div class="item_left item1"><img src="./images/item01.png" alt="통통생활 주방세제"></div>
+										<div class="item_right">
+											<h3>통통생활 1종 주방세제<span>500mL</span></h3>
+											<p class="item_txt">통통생활 주방세제는 식약처 기준에 따른<br>
+												안전한 성분으로만 만들어진 1종 세척제로<br>
+												야채, 과일은 물론 젖병까지 깨끗하게 세척 가능합니다.</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_left item2"><img src="./images/item02.png" alt="통통생활 주방세제"></div>
+									<div class="item_right">
+										<h3>통통생활 깨끗한 세탁세제<span>1.7L</span></h3>
+										<p class="item_txt">통통생활 세탁세제는 온 가족이 사용 가능한 저자극 세탁세제이며<br>
+											더마테스트 및 로하스 인증을 받은 제품입니다.<br>
+											안전성 및 세정력까지 모두 갖춘 제품이니 안심하고 사용하세요.</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_left item3"><img src="./images/item03.png" alt="통통생활 주방세제"></div>
+									<div class="item_right">
+										<h3>통통생활 마일드 섬유유연제<span>1.7L</span></h3>
+										<p class="item_txt">입는 동안 은은하게 지속되는 산뜻한 플로럴향!<br>
+											통통생활 섬유유연제는 더마테스트 및 로하스 인증을 받은<br>
+											피부 친화적 마일드 섬유유연제 입니다.</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_left item4"><img src="./images/item04.png" alt="통통생활 일회용 수세미"></div>
+									<div class="item_right">
+										<h3>통통생활 일회용 수세미</h3>
+										<p class="item_txt">통통생활 일회용 수세미는 한 장씩 뜯어 사용할 수 있는<br>
+											간편한 일회용 수세미입니다.<br>
+											실용적으로 다양하게 활용할 수 있으며,<br>
+											유해 성분 무첨가, 안전한 국내산 제품입니다.</p>
+									</div>
+								</div>
+								
+								<!-- <div class="swiper-slide" id="ttall_slide">
+									<div class="item_left item4" ><img id="ttall" src="./images/ttall.jpg" alt="통통생활 전제품"></div>
+								</div> -->
+							</div>
+							<!-- pagination -->
+							<div class="swiper-pagination"></div>
+							<!-- buttons -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+
+						<!-- 모바일 슬라이드 -->
+						<div class="swiper-container_b_m only_mobile">
+							<div class="swiper-wrapper">
+								<!--240425 추가-->
+								<div class="swiper-slide">
+									<div class="item_left item4"><img src="./images/item09.png" alt="통통스킨로션"></div>
+									<div class="item_right">
+										<h3>통통생활 통통스킨로션<span>300ml</span></h3>
+										<p class="item_txt">최대 48시간 지속되는 고보습 수분감으로<br>
+											시카성분과 비타민이 첨가되어 <br> 피부장벽 개선 및 자극 진정효과를 갖춘<br>
+											얼굴부터 바디까지 올인원 스킨케어 통통스킨로션입니다.
+											</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_left item4"><img src="./images/item10.png" alt="통통선스틱"></div>
+									<div class="item_right">
+										<h3>통통생활 통통선스틱<span>20g</span></h3>
+										<p class="item_txt">시카성분과 비타민 첨가로<br>피부를 진정시키고,
+											피부 자생력 케어가 가능하며<br>
+											SPF50+/PA++++로 자외선으로부터 피부를 보호하고<br>
+											사계절 데일리로 사용 가능한 통통선스틱입니다.</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_left item4"><img src="./images/item11.png" alt="통통치약"></div>
+									<div class="item_right">
+										<h3>통통생활 통통치약<span>300g</span></h3>
+										<p class="item_txt">고추냉이 성분과 쿨링향, 박하유와 비타민 첨가<br>
+											극강의 시원한 마무리감, 강력한 안티프라그<br>
+											확실한 잇몸질환 예방까지 가능한 통통치약입니다.
+										</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_left item4"><img src="./images/item06.png" alt="통통생활 통통비타올인원"></div>
+									<div class="item_right">
+										<h3>통통생활 통통비타올인원<span>1L</span></h3>
+										<p class="item_txt">샴푸+린스+바디워시를 하나로 올인원샴푸입니다. <br>
+											머리부터 발끝까지 하나로 샤워시간이 단축되며 <br> 피부보호 및 아토피 등 가려움 완화되고 <br> 피부 및 모근에 단백질 공급까지 가능합니다.
+										</p>
+									</div>
+								</div>
+								<!--240425 추가-->
+								<div class="swiper-slide">
+									<div class="item_left item4"><img src="./images/item05.png" alt="통통생활 통통쌀"></div>
+									<div class="item_right">
+										<h3>통통생활 통통쌀<span>1kg</span></h3>
+										<p class="item_txt">23년 햅쌀 강화교동 해풍맞은 고시히카리쌀입니다.<br>
+											소량포장으로 필요할 때만 조금씩 사용 가능하고<br>
+											진공포장으로 청결과 신선도 유지에 탁월하며<br>
+											무공해 청정지역의 깨끗한 환경에서 자라 맛까지 좋은 상품입니다.</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_left item4 item_kimchi"><img src="./images/item07.png" alt="통통백두산김치"></div>
+									<div class="item_right">
+										<h3>통통백두산김치<span>5kg</span></h3>
+										<p class="item_txt">백두산 자연 그대로의 신선한 고랭지 배추와 텁텁함이 없는<br>
+											담백한 씨없는 고춧가루, 특유의 비린내가 없는<br>
+											시원하고 깔끔한 감칠맛의 3년 숙성 새우젓을 사용하여<br>
+											그대로 담은 통통백두산김치입니다.</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_left item4 item_honey"><img src="./images/item08.png" alt="통통꿀"></div>
+									<div class="item_right">
+										<h3>통통꿀<span>500g</span></h3>
+										<p class="item_txt">소량만 생산하여 한정판매하는 <br>
+											해충방제 농약과 항생제를 전혀 쓰지 않은<br> 천연 통통꿀입니다.</p>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+										<div class="item_left item1"><img src="./images/item01.png" alt="통통생활 주방세제"></div>
+										<div class="item_right">
+											<h3>통통생활 1종 주방세제<span>500mL</span></h3>
+											<p class="item_txt">통통생활 주방세제는 식약처 기준에 따른<br>
+												안전한 성분으로만 만들어진 1종 세척제로<br>
+												야채, 과일은 물론 젖병까지 깨끗하게 세척 가능합니다.</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_left item2"><img src="./images/item02.png" alt="통통생활 주방세제"></div>
+									<div class="item_right">
+										<h3>통통생활 깨끗한 세탁세제<span>1.7L</span></h3>
+										<p class="item_txt">통통생활 세탁세제는<br>
+											온 가족이 사용 가능한 저자극 세탁세제이며<br>
+											더마테스트 및 로하스 인증을 받은 제품입니다.<br>
+											안전성 및 세정력까지 모두 갖춘 제품이니<br>
+											안심하고 사용하세요.</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_left item3"><img src="./images/item03.png" alt="통통생활 주방세제"></div>
+									<div class="item_right">
+										<h3>통통생활 마일드 섬유유연제<span>1.7L</span></h3>
+										<p class="item_txt">입는 동안 은은하게 지속되는 산뜻한 플로럴향!<br>
+											통통생활 섬유유연제는 더마테스트 및 로하스 인증을 받은<br>
+											피부 친화적 마일드 섬유유연제 입니다.</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_left item4"><img src="./images/item04.png" alt="통통생활 일회용 수세미"></div>
+									<div class="item_right">
+										<h3>통통생활 일회용 수세미</h3>
+										<p class="item_txt">통통생활 일회용 수세미는 한 장씩 뜯어 사용할 수 있는<br>
+											간편한 일회용 수세미입니다.<br>
+											실용적으로 다양하게 활용할 수 있으며,<br>
+											유해 성분 무첨가, 안전한 국내산 제품입니다.</p>
+									</div>
+								</div>
+							</div>
+							<!-- pagination -->
+							<div class="swiper-pagination"></div>
+							<!-- buttons -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+
+		<!-- Swiper JS -->
+			<script type="text/javascript" src="./js/swiper-bundle.js"></script>
+
+			<!-- Initialize Swiper -->
+			<script>
+				var swiper = new Swiper('.swiper-container_mb', {
+				autoplay: {
+					delay: 4500,
+					disableOnInteraction: false,
+				},
+				loop: true
+				});
+
+				var swiper = new Swiper('.swiper-container_b', {
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'progressbar',
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
+				loop: true,
+				observer: true,
+  				observeParents: true
+				});
+
+				var swiper = new Swiper('.swiper-container_b_m', {
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'progressbar',
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false,
+				},
+				loop: true,
+				observer: true,
+  				observeParents: true
+				});
+			</script>
+
+
+		<!-- Shop-->
+		<div id="shop" class="bg_s2 stop-dragging">
+			<div class="scontainer">
+				<div class="ser_wrap">
+					<h2>Shop
+						<span>TongTong Mall</span>
+					</h2>
+						<div class="sw_left">
+							<div>
+								<p class="shop_qr"><a href="https://www.tongtongmall.net"><img src="./images/ttm_qr.png" alt="통통몰 qr코드"></a></p>
+								<p class="shop_name"><img src="./images/ttm_logo.png" alt="통통몰"></p>
+								<p class="shop_txt">
+									통통생활의 전제품을<br>
+									가장 저렴하게 구매할 수 있는 곳
+								</p>
+							</div>
+							<ul>
+								<li><a href="https://play.google.com/store/apps/details?id=com.tongtong.tongtongmall1&hl=ko&gl=US
+									"><img src="./images/btn_and.png" alt="Google Play"></a></li>
+								<li><a href="https://apps.apple.com/kr/app/%ED%86%B5%ED%86%B5%EB%AA%B0/id1471587538
+									"><img src="./images/btn_app.png" alt="Apple Store"></a></li>
+							</ul>
+						</div>
+						<div class="sw_right">
+							<div class="sw_img"><img src="./images/ttm.png" alt="통통몰"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+
+		<!-- Contact -->
+		<div id="contact" class="bg_s1 stop-dragging">
+			<div class="scontainer mb0px">
+				<div class="ct_wrap">
+					<h2>Contact</h2>
+					<div class="ct_left">
+						<p class="ct_mail"><a href="mailto:tongtonglife@etomato.com"><img src="./images/ct_mail.png"
+									alt="제휴 및 입점 문의는 메일로 관련 내용 전달주시면 확인 후 회신드리겠습니다."></a></p>
+						<p>
+							<span class="ttl_grey">Tel.</span> 02-2128-2600<br>
+							<span class="ttl_grey">Fax.</span> 02-338-3624 <br>
+							<span class="ttl_grey">Email.</span> tongtonglife@etomato.com
+						</p>
+						<p class="ct_time">월~금 09:00~18:00 (점심 12:00~13:00)</p>
+						<p class="only_pc">서울특별시 마포구 양화진4길 32 이토마토빌딩 6층<br>
+							㈜토마토페이</p>
+					</div>
+
+					<div class="ct_right">
+						<div id="daumRoughmapContainer1681700543953" class="root_daum_roughmap root_daum_roughmap_landing map"></div>
+						<p class="only_mobile">서울특별시 마포구 양화진4길 32<br>이토마토빌딩 6층 ㈜토마토페이</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="clear"></div>
+
+		<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+		<script>
+			new daum.roughmap.Lander({
+				"timestamp" : "1681700543953",
+				"key" : "2egfg"
+			}).render();
+		</script>
+
+		<!-- News -->
+		<!-- <div id="news" class="bg_n stop-dragging">
+			<div class="scontainer">
+				<div class="ser_wrap">
+					<h2>News</h2>
+						<ul>
+							<li>
+								<div class="news_con">
+									<span class="ttl_grey">2023.03.04</span>
+									<h4>기사제목최대글자수는25기사제목최대글자수는25기사제목최대글자수는</h4>
+									<p class="only_pc">기사내용최대글자수는98기사내용최대글자수는98기사내용최대글자수는98기사내용최대글자수는98기사내용최대글자수는98기사내용최대글자수는98기사내용최대글자수는98기사내용최대글자수는98기사내용</p>
+									<p class="only_mobile">기사내용최대글자수는70기사내용최대글자수는70기사내용최대글자수는70기사내용최대글자수는70기사내용최대글자수는70기사내용최대글자수는70</p>
+									<a href="#"><img src="images/newsplus.png" alt="자세히 보기"></a>
+								</div>
+							</li>
+							<li>
+								<div class="news_con">
+									<span class="ttl_grey">2023.03.14</span>
+									<h4>잔류 세제 걱정 없는 프리미엄 세제 사용하자</h4>
+									<p>면역력이 약하고 피부가 민감한 아이를 둔 엄마는 세제 하나를 고르는데도 신중하다. 특히 세탁세제에는 얼룩, 오염 제거를 위해 화학물질을 첨가하게 되는데 헹굼 과정을 거치더라도 100% 제거되지 않아 피부에 자극을</p>
+									<a href="#"><img src="images/newsplus.png" alt="자세히 보기"></a>
+								</div>
+							</li>
+							<li>
+								<div class="news_con">
+									<span class="ttl_grey">2023.03.14</span>
+									<h4>잔류 세제 걱정 없는 프리미엄 세제 사용하자</h4>
+									<p>면역력이 약하고 피부가 민감한 아이를 둔 엄마는 세제 하나를 고르는데도 신중하다. 특히 세탁세제에는 얼룩, 오염 제거를 위해 화학물질을 첨가하게 되는데 헹굼 과정을 거치더라도 100% 제거되지 않아 피부에 자극을</p>
+									<a href="#"><img src="images/newsplus.png" alt="자세히 보기"></a>
+									<a href="#"><img src="images/newsplus.png" alt="자세히 보기"></a>
+								</div>
+							</li>
+						</ul>
+						<p class="news_more">기사 더보기<img src="./images/btn_plus.png" alt="+"></p>
+				</div>
+			</div>
+		</div> -->
+
+		<!--## 컨텐츠 : CONTAINER ##-->
+
+		<!--# 풋터 시작 : FOOTER #-->
+		<div class="footer">
+			<div class="copyright">
+					<p class="f_logo">
+						<a href="index.htm"><img src="./images/h_logo.png" alt="통통생활"></a>
+					</p>
+					<p class="ft_txt">
+						㈜토마토페이 | 서울특별시 마포구 양화진 4길 32 이토마토빌딩<br>사업자 등록번호: 124-87-02232<br>
+						<span class="ttl_grey">Tel.</span> 02-2128-2600 | <span class="ttl_grey">Email.</span>
+						tongtonglife@etomato.com<br>
+					</p>
+					<p class="ft_last">Copyright © ㈜토마토페이. All Rights Reserved.</p>
+					<div class="fw_top"><a href="#start" class="page-scroll"><img src="./images/top_btn.png" alt="위로"></a></div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+		<!--# 풋터 끝 : FOOTER #-->
+
+
+	<!-- Bottom Nav -->
+	<script type="text/javascript">
+		var ingMenu = "";
+		function glbMenu(val) {
+			if (!ingMenu) ingMenu = val;
+			if (ingMenu != val) {
+				$(".g_menu_wrap").css("display", "none");
+				$(".tgl_btn").removeClass("on");
+				ingMenu = val;
+			} else {
+				if ($(".tgl_btn").hasClass("on")) {
+					$(".g_menu_wrap").css("display", "none");
+					$(".tgl_btn").removeClass("on");
+					return;
+				}
+			}
+			if (val == "tgl_glbMenu") {
+				$(".g_menu_wrap").css("display", "block");
+				$(".tgl_btn").addClass("on");
+				return;
+			}
+		}
+	</script>
+
+	<!-- Main Slider -->
+	<script type="text/javascript">
+
+		$(window).load(function () {
+			$('.flexslider').flexslider({
+				animation: "fade",
+				start: function (slider) {
+					$('body').removeClass('loading');
+				}
+			});
+		});
+	</script>
+
+	<!--### 전체 레이아웃 끝 : WRAP ###-->
+
+	<!--sortable-->
+	<!-- 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+	<script>
+		$("#sortable, #sortable2").sortable({
+			cursor: "move",
+			//이동시 커서 왼쪽에서 5px 위치에 항상 요소가 위치함
+			cursorAt: { left: 5 },
+			//sort-list2로 요소 이동가능.. 
+			//sort-list2에서 sort-list1로는 이동불가 - 따로 또 써주어야함.
+			connectWith: ".connectedSortable",
+			update: function (event, ui) {
+				//순서가 바뀌면 
+				var listArray = $("#sortable").sortable('toArray', { attribute: 'value' }).toString();
+				//배열로 저장한다. 
+			},
+		});
+
+	</script>
+
+	<!--tooltip-->
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+
+
+</body>
